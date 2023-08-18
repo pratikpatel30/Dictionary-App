@@ -16,6 +16,7 @@ const getWordInfo = async (word) => {
 
 //we can used try and catch for error handling
     try{
+        resultDiv.innerHTML = "Fetching your data......"
 
     const response = await fetch(`https://api.dictionaryapi.dev/api/v2/entries/en/${word}`);
     const data = await response.json();
